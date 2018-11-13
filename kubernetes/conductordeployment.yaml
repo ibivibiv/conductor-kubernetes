@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: conductor
+  labels:
+    app: conductor
+spec:
+  replicas: 5
+  selector:
+    matchLabels:
+      app: conductor
+      role: cluster
+      tier: backend
+  template:
+    metadata:
+      labels:
+        app: conductor
+        role: cluster
+        tier: backend
+    spec:
+      containers:
+      - name: conductor
+        image: <your image here>
+      restartPolicy: Always
+      
