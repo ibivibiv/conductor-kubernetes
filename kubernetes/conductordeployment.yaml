@@ -9,13 +9,13 @@ spec:
   selector:
     matchLabels:
       app: conductor
-      role: cluster
+      role: worker
       tier: backend
   template:
     metadata:
       labels:
         app: conductor
-        role: cluster
+        role: worker
         tier: backend
     spec:
       containers:
