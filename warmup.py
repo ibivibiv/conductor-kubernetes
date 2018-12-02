@@ -14,7 +14,7 @@ def main():
 
     NAMESPACE = "default"
 
-    STARTUPSLEEP = 120
+    STARTUPSLEEP = 300
 
 
     #time for some logging that will help make the console logs visible in pod logs for debug
